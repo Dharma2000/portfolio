@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dharmasimhareddy Kalluru | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+<header class="hero">
+  <h1><span id="typed"></span></h1>
+  <p>Data Scientist | Data Engineer | Cloud Enthusiast</p>
+  <a href="#contact" class="btn">Contact Me</a>
+  <a href="resume.pdf" class="btn download-btn" download>Download Resume</a>
+</header>
+
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>Master's Student in Data Science @ Kent State University (GPA: 3.71/4.0). Passionate about building scalable data pipelines, machine learning models, and exploring cloud technologies (AWS, Azure, Databricks).</p>
+</section>
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <span>Python</span>
+    <span>SQL</span>
+    <span>Machine Learning</span>
+    <span>Data Engineering</span>
+    <span>Spark</span>
+    <span>Hadoop</span>
+    <span>AWS</span>
+    <span>Azure</span>
+    <span>Tableau</span>
+    <span>PowerBI</span>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="images/youtube.png" alt="YouTube Analytics" class="project-img">
+      <h3>YouTube Analytics</h3>
+      <p>Analyzed engagement metrics and increased viewership by 15%.</p>
+    </div>
+    <div class="project-card">
+      <img src="images/segmentation.png" alt="Customer Segmentation" class="project-img">
+      <h3>Customer Segmentation</h3>
+      <p>Built K-means clustering model for targeted marketing strategies.</p>
+    </div>
+    <div class="project-card">
+      <img src="images/intrusion.png" alt="Network Intrusion Detection" class="project-img">
+      <h3>Network Intrusion Detection</h3>
+      <p>Developed ML models achieving 95% detection accuracy.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <p>Email: dharmasimhareddy1234@gmail.com</p>
+  <p>GitHub: <a href="https://github.com/Dharma2000" target="_blank">Dharma2000</a></p>
+  <p>LinkedIn: [Add LinkedIn Link]</p>
+</section>
+
+<footer>
+  <p>© 2025 Dharmasimhareddy Kalluru</p>
+</footer>
+
+<a href="mailto:dharmasimhareddy1234@gmail.com" class="hire-me" target="_blank">Hire Me</a>
+
+<script>
+  var typed = new Typed("#typed", {
+    strings: ["Hi, I'm Dharma 👋", "Data Scientist", "Data Engineer", "Cloud Enthusiast"],
+    typeSpeed: 70,
+    backSpeed: 50,
+    loop: true
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>
